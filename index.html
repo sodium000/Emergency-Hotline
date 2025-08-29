@@ -27,7 +27,7 @@
             <div class=" min-w-[100px] flex justify-center items-center gap-2 rounded-4xl bg-[#41ff6b1a]" >
                 <Span class="font-bold" id="token">100</Span>  <img src="./assets/coin.png" alt="" class="max-h[21px] max-w-[21px]">
             </div>
-            <button class=" min-w-[110px] flex justify-center items-center gap-2 rounded-4xl text-white bg-[#00A63E] font-semibold"><span class="font-bold">0</span>Copy</button>
+            <button class=" min-w-[110px] flex justify-center items-center gap-2 rounded-4xl text-white bg-[#00A63E] font-semibold"><span class="font-bold" id="CopyCount">0</span>Copy</button>
         </div>
     </div>
     <div class="mt-10 flex flex-col justify-center items-center gap-2 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] ">
@@ -55,8 +55,8 @@
                     <p class="hind-madurai-regular text-[12px] pl-2 text-[#5c5c5c] ">All</p>
                 </div>
                 <div class="flex gap-3">
-                    <button class="w-1/2  flex justify-center items-center gap-1 h-[30px] rounded-md shadow-xl border-1 border-gray-300"> <span><img src="./assets/copy.png" alt=""></span> Copy</button>
-                    <button class="w-1/2  flex justify-center items-center gap-1 text-white h-[30px] bg-[#00A63E]  rounded-md" onclick="callAlart(callname1,callnumber1)"> <span><img id="callimg" src="./assets/telephone.png" alt=""></span> Call</button>
+                    <button class="w-1/2  flex justify-center items-center gap-1 h-[30px] rounded-md shadow-xl border-1 border-gray-300" onclick="copycount(callnumber1)"> <span><img src="./assets/copy.png" alt=""></span> Copy</button>
+                    <button class="w-1/2  flex justify-center items-center gap-1 text-white h-[30px] bg-[#00A63E]  rounded-md" id="bg1" onclick="callAlart(callname1,callnumber1)"> <span><img id="callimg" src="./assets/telephone.png" alt=""></span> Call</button>
                 </div>
             </div>
             <div class="flex flex-col gap-3 p-7  shadow-md border-1 border-sky-100 rounded-lg">
@@ -75,7 +75,7 @@
                     <p class="hind-madurai-regular text-[12px] pl-2 text-[#5c5c5c] ">Police</p>
                 </div>
                 <div class="flex gap-3">
-                    <button class="w-1/2  flex justify-center items-center gap-1 h-[30px] rounded-md shadow-xl border-1 border-gray-300"> <span><img src="./assets/copy.png" alt=""></span> Copy</button>
+                    <button class="w-1/2  flex justify-center items-center gap-1 h-[30px] rounded-md shadow-xl border-1 border-gray-300" onclick="copycount(callnumber2)"> <span><img src="./assets/copy.png" alt=""></span> Copy</button>
                     <button class="w-1/2  flex justify-center items-center gap-1 text-white h-[30px] bg-[#00A63E]  rounded-md " onclick="callAlart(callname2,callnumber2)"> <span><img src="./assets/telephone.png" alt=""></span> Call</button>
                 </div>
             </div>
@@ -95,7 +95,7 @@
                     <p class="hind-madurai-regular text-[12px] pl-2 text-[#5c5c5c] ">Fire</p>
                 </div>
                 <div class="flex gap-3">
-                    <button class="w-1/2  flex justify-center items-center gap-1 h-[30px] rounded-md shadow-xl border-1 border-gray-300"> <span><img src="./assets/copy.png" alt=""></span> Copy</button>
+                    <button class="w-1/2  flex justify-center items-center gap-1 h-[30px] rounded-md shadow-xl border-1 border-gray-300" onclick="copycount(callnumber3)"> <span><img src="./assets/copy.png" alt=""></span> Copy</button>
                     <button class="w-1/2  flex justify-center items-center gap-1 text-white h-[30px] bg-[#00A63E]  rounded-md" onclick="callAlart(callname3,callnumber3)"> <span><img src="./assets/telephone.png" alt=""></span> Call</button>
                 </div>
             </div>
@@ -115,7 +115,7 @@
                     <p class="hind-madurai-regular text-[12px] pl-2 text-[#5c5c5c] ">Health</p>
                 </div>
                 <div class="flex gap-3">
-                    <button class="w-1/2  flex justify-center items-center gap-1 h-[30px] rounded-md shadow-xl border-1 border-gray-300"> <span><img src="./assets/copy.png" alt=""></span> Copy</button>
+                    <button class="w-1/2  flex justify-center items-center gap-1 h-[30px] rounded-md shadow-xl border-1 border-gray-300" onclick="copycount(callnumber4)"> <span><img src="./assets/copy.png" alt=""></span> Copy</button>
                     <button class="w-1/2  flex justify-center items-center gap-1 text-white h-[30px] bg-[#00A63E]  rounded-md" onclick="callAlart(callname4,callnumber4)"> <span><img src="./assets/telephone.png" alt=""></span> Call</button>
                 </div>
             </div>
@@ -135,7 +135,7 @@
                     <p class="hind-madurai-regular text-[12px] pl-2 text-[#5c5c5c] ">Help</p>
                 </div>
                 <div class="flex gap-3">
-                    <button class="w-1/2  flex justify-center items-center gap-1 h-[30px] rounded-md shadow-xl border-1 border-gray-300"> <span><img src="./assets/copy.png" alt=""></span> Copy</button>
+                    <button class="w-1/2  flex justify-center items-center gap-1 h-[30px] rounded-md shadow-xl border-1 border-gray-300" onclick="copycount(callnumber5)"> <span><img src="./assets/copy.png" alt=""></span> Copy</button>
                     <button class="w-1/2  flex justify-center items-center gap-1 text-white h-[30px] bg-[#00A63E]  rounded-md" onclick="callAlart(callname5,callnumber5)"> <span><img src="./assets/telephone.png" alt=""></span> Call</button>
                 </div>
             </div>
@@ -155,7 +155,7 @@
                     <p class="hind-madurai-regular text-[12px] pl-2 text-[#5c5c5c] ">Govt.</p>
                 </div>
                 <div class="flex gap-3">
-                    <button class="w-1/2  flex justify-center items-center gap-1 h-[30px] rounded-md shadow-xl border-1 border-gray-300"> <span><img src="./assets/copy.png" alt=""></span> Copy</button>
+                    <button class="w-1/2  flex justify-center items-center gap-1 h-[30px] rounded-md shadow-xl border-1 border-gray-300" onclick="copycount(callnumber6)"> <span><img src="./assets/copy.png" alt=""></span> Copy</button>
                     <button class="w-1/2  flex justify-center items-center gap-1 text-white h-[30px] bg-[#00A63E]  rounded-md" onclick="callAlart(callname6,callnumber6)"> <span><img src="./assets/telephone.png" alt=""></span> Call</button>
                 </div>
             </div>
@@ -175,7 +175,7 @@
                     <p class="hind-madurai-regular text-[12px] pl-2 text-[#5c5c5c] ">Electricity</p>
                 </div>
                 <div class="flex gap-3">
-                    <button class="w-1/2  flex justify-center items-center gap-1 h-[30px] rounded-md shadow-xl border-1 border-gray-300"> <span><img src="./assets/copy.png" alt=""></span> Copy</button>
+                    <button class="w-1/2  flex justify-center items-center gap-1 h-[30px] rounded-md shadow-xl border-1 border-gray-300" onclick="copycount(callnumber7)"> <span><img src="./assets/copy.png" alt=""></span> Copy</button>
                     <button class="w-1/2  flex justify-center items-center gap-1 text-white h-[30px] bg-[#00A63E]  rounded-md" onclick="callAlart(callname7,callnumber7)"> <span><img src="./assets/telephone.png" alt=""></span> Call</button>
                 </div>
             </div>
@@ -195,7 +195,7 @@
                     <p class="hind-madurai-regular text-[12px] pl-2 text-[#5c5c5c] ">NGO</p>
                 </div>
                 <div class="flex gap-3">
-                    <button class="w-1/2  flex justify-center items-center gap-1 h-[30px] rounded-md shadow-xl border-1 border-gray-300"> <span><img src="./assets/copy.png" alt=""></span> Copy</button>
+                    <button class="w-1/2  flex justify-center items-center gap-1 h-[30px] rounded-md shadow-xl border-1 border-gray-300" onclick="copycount(callnumber8)"> <span><img src="./assets/copy.png" alt=""></span> Copy</button>
                     <button class="w-1/2  flex justify-center items-center gap-1 text-white h-[30px] bg-[#00A63E]  rounded-md" onclick="callAlart(callname8,callnumber8)"> <span><img src="./assets/telephone.png" alt=""></span> Call</button>
                 </div>
             </div>
@@ -215,31 +215,35 @@
                     <p class="hind-madurai-regular text-[12px] pl-2 text-[#5c5c5c] ">Travel</p>
                 </div>
                 <div class="flex gap-3">
-                    <button class="w-1/2  flex justify-center items-center gap-1 h-[30px] rounded-md shadow-xl border-1 border-gray-300"> <span><img src="./assets/copy.png" alt=""></span> Copy</button>
+                    <button class="w-1/2  flex justify-center items-center gap-1 h-[30px] rounded-md shadow-xl border-1 border-gray-300" onclick="copycount(callnumber9)"> <span><img src="./assets/copy.png" alt=""></span> Copy</button>
                     <button class="w-1/2  flex justify-center items-center gap-1 text-white h-[30px] bg-[#00A63E]  rounded-md" onclick="callAlart(callname9,callnumber9)"> <span><img src="./assets/telephone.png" alt=""></span> Call</button>
                 </div>
             </div>
         </div>
-        <div class="contact w-1/4 border-1 border-sky-100 rounded-lg">
-            <div class="p-3 flex justify-between items-center">
-            <div class="flex items-center gap-1">
-                <img src="./assets/clock.png" alt="">
-                <p>Call History</p>
-            </div>
-            <button class=" min-w-[100px] h-[40px] flex justify-center items-center gap-2 rounded-4xl text-white bg-[#00A63E] font-semibold"> Clear</button>
+        <div class="w-1/4 border-1 border-sky-100 rounded-lg" id="contact">
+        <div class="p-3 flex justify-between items-center">
+        <div class="flex items-center gap-1">
+            <img src="./assets/clock.png" alt="">
+            <p>Call History</p>
         </div>
-        <div class="p-6 flex justify-between items-center">
-            <div>
-            <h1 class="font-semibold">Fire Service Number</h1>
-            <p class="hind-madurai-regular text-[#5c5c5c]">999</p>
+        <button id="clearBtn" class="min-w-[100px] h-[40px] flex justify-center items-center gap-2 rounded-4xl text-white bg-[#00A63E] font-semibold">Clear</button>
+    </div>
+    <!-- <div class="p-6 flex justify-between items-center" id="contactAdded">
+            <div id="contactPart">
+            <h1 class="font-semibold" id="contactName" >Fire Service Number</h1>
+            <p class="hind-madurai-regular text-[#5c5c5c]" id="contactNumber">999</p>
             </div>
-            <div>
+            <div id="contactTime">
                 11:36:58 AM
             </div>
-        </div>
-        </div>
-    </div>
+        </div> -->
+</div>
 
     <script src="./index.js"></script>
 </body>
 </html>
+
+
+
+
+
