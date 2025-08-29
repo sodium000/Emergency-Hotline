@@ -21,17 +21,15 @@
 ## Answer2
 - Use the document.createElement() method, passing the tag name of the element you want to create as a string argument.
 - For example from my own code :
-
-    
-  ` const contactPart = document.createElement("div"); //create new element
+- 
+    const contactPart = document.createElement("div");
     contactPart.classList.add("contactPart");
 
     const contactName = document.createElement("h1");
     contactName.classList.add("font-semibold");
-    contactName.textContent = callName;               //instert new text
+    contactName.textContent = callName;
 
-    // Append name and number to contactPart
-    contactPart.appendChild(contactName);` 
+    contactPart.appendChild(contactName);
 
     ## Answer3
 
@@ -47,15 +45,15 @@
 
       ## Answer5
 
-      # preventDefault():
+      ### preventDefault():
       - This method is used to prevent the default action associated with an event from occurring.
   
-      # stopPropagation():
+      ### stopPropagation():
       - This method is used to prevent the propagation (or "bubbling") of an event up or down the DOM tree.
 
 
-- 📂 **GitHub Repository**
-- 🌐 **Live Link**
+- 📂 **GitHub Repository** : <https://github.com/sodium000/Emergency-Hotline>
+- 🌐 **Live Link** :<https://sodium000.github.io/Emergency-Hotline/>
 
 ---
 
