@@ -6,7 +6,6 @@ function lovecount() {
   document.getElementById("love-countJs").innerHTML = sum;
 }
 
-const callImg = document.getElementById("callimg");
 function callAlart(a, b) {
   let coin = document.getElementById("token").innerHTML;
   if (coin >= 20) {
@@ -58,7 +57,6 @@ function callAlart(a, b) {
     // Append everything to the main contact container
     contactContainer.appendChild(contactAdded);
 } 
-
 else {
     alert("You don't have sufficient balance");
 }
