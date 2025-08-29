@@ -11,7 +11,7 @@ function callAlart(a, b) {
   if (coin >= 20) {
     const callName = a.innerHTML;
     const callnumber = b.innerHTML;
-    alert(callName + " " + callnumber + "....");
+    alert("📞"+callName + " " + callnumber + "....");
     let total = coin - 20;
     document.getElementById("token").innerHTML = total;
 
